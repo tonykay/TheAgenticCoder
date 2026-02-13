@@ -126,44 +126,22 @@ blogDir = "post"
 # giscusTheme = "dark_protanopia" # Default: dark_dimmed
 # giscusLang = "en" # Default: en
 
+# The year when this website was created, this value is used in the copyright
+# notice of the footer.
+since = 2025
+
+# Custom CSS files loaded after theme CSS
+customCSS = ["css/custom.css"]
+
 # Enable or disable Commento comments (https://commento.io)
 # DISABLED - Migrated to Disqus
 [commento]
 enabled = false
 url = "https://cdn.commento.io"
 
-
-# Maximum number of recent posts. (default: 8)
-# numberOfRecentPosts = 8
-
-# Maximum number of featured posts. (default: 8)
-# numberOfFeaturedPosts = 8
-
-# Pin featured posts in list.
-# pinFeatured = true
-
-# Maximum number of pinned featured posts. (default: 8)
-# numberOfPinnedPosts = 8
-
-# Date format. Checkout https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference for details.
-# dateFormat = "2006-01-02" # Default to "Jan 2, 2006".
-# customFonts = false # toggle to true if you want to use custom fonts only.
-
-# The year when this website was created, this value is used in the copyright
-# notice of the footer.
-since = 2025
-
-# Show related content at the end of an article based on the 'series' taxonomy. Can be set in post front matter.
-# showRelatedInArticle = false
-# showRelatedInSidebar = false
-
-# Custom CSS files loaded after theme CSS
-customCSS = ["css/custom.css"]
-
 # website author
 [author]
 name = "TheAgenticCoder"
-photo = "images/sidebar-slash-spec.png" # TODO: replace with TheAgenticCoder sidebar image
 
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.

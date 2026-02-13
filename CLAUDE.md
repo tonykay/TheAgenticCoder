@@ -170,6 +170,7 @@ When creating new posts:
 
 ## Active Technologies
 - Hugo (v0.155.3+extended), hugo-clarity theme, GitHub Pages, GitHub Actions
+- CSS (custom overrides for hugo-clarity SASS-compiled theme) + hugo-clarity theme (git submodule), Hugo v0.155.3+extended (005-fix-sidebar-styling)
 
 ## TODOs
 
@@ -178,3 +179,6 @@ When creating new posts:
 - Configure Disqus shortname for theagenticcoder.com
 - Confirm YouTube channel URL in social links
 - Clean up old blog posts from `content/post/` (inherited from Spec Coding)
+
+## Recent Changes
+- 005-fix-sidebar-styling: Added CSS (custom overrides for hugo-clarity SASS-compiled theme) + hugo-clarity theme (git submodule), Hugo v0.155.3+extended
