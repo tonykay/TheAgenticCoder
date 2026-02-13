@@ -4,7 +4,7 @@ enableSearch = true
 # socials
 x = "@cloud_assembler"
 largeTwitterCard = false  # set to true if you want to show a large twitter card image. The default is a small twitter card image
-introDescription = "All things Spec Coding, Spec-driven Development (SDD), Agentic AI software development, tools, toolchains, and patterns. Vibers welcome!"
+introDescription = "Your hub for vibe coding, spec-driven development, and agentic AI coding. News, how-tos, tools, videos, and resources for the modern AI-assisted developer."
 # AI Lead, technologist and passionate learner, happiest working on AI Engineering and Cloud Automation - or climbing!"
 # introURL = "about/" # set the url for the 'read more' button below the introDescription, or set to false to not show the button
 # description = "A theme based on VMware's Clarity Design System for publishing technical blogs with Hugo." # Set your site's meta tag (SEO) description here. Alternatively set this description in your home page content file e.g. content/_index.md. Whatever is set in the latter will take precedence.
@@ -53,7 +53,7 @@ fontsDir = "fonts/" # without a leading forward slash
 fallBackOgImage = "images/thumbnail.png"
 
 # Logo image
-logo = "images/spec-coding-logo.png"
+logo = "images/spec-coding-logo.png" # TODO: replace with TheAgenticCoder logo
 #logo = "logos/logo.png"
 #logo = "logos/logo.svg"
 
@@ -162,8 +162,8 @@ customCSS = ["css/custom.css"]
 
 # website author
 [author]
-name = "Spec Coding"
-photo = "images/sidebar-slash-spec.png" #include this if you would like to show the author photo on the sidebar
+name = "TheAgenticCoder"
+photo = "images/sidebar-slash-spec.png" # TODO: replace with TheAgenticCoder sidebar image
 
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.
@@ -174,7 +174,7 @@ websiteDomain = "example.com" # domain name of your website, most cases same as 
 # Tok - not configured yet 2025-10-11
 [matomo_analytics]
 enable = false # To enable matomo analytics change to `true`.
-websiteDomain = "specoding.com" # Set the domain name of your website, in most cases same as your base URL this is required.
+websiteDomain = "theagenticcoder.com" # Set the domain name of your website, in most cases same as your base URL this is required.
 matomoDomain = "matomo.example.com" # Set to Matomo domain
 matomoSiteID = "1" # Default is set to 1, change this to the siteid being tracked
 

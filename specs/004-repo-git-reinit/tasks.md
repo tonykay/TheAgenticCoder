@@ -49,12 +49,12 @@ relevant files.
 
 ### Implementation for User Story 1
 
-- [ ] T006 [US1] Remove the existing `.git/` directory from the repository root
-- [ ] T007 [US1] Initialize a new git repository with `git init -b main` in the repository root
-- [ ] T008 [US1] Re-add hugo-clarity theme as submodule: `git submodule add https://github.com/chipzoller/hugo-clarity themes/hugo-clarity`
-- [ ] T009 [US1] Stage all project files with `git add -A`
-- [ ] T010 [US1] Create initial commit with message: `chore: initialize TheAgenticCoder repository`
-- [ ] T011 [US1] Verify: `git log --oneline` shows exactly one commit (SC-001); `git branch` shows only `main` (SC-003); `git submodule status` shows hugo-clarity at valid commit (SC-004)
+- [x] T006 [US1] Remove the existing `.git/` directory from the repository root
+- [x] T007 [US1] Initialize a new git repository with `git init -b main` in the repository root
+- [x] T008 [US1] Re-add hugo-clarity theme as submodule: `git submodule add https://github.com/chipzoller/hugo-clarity themes/hugo-clarity`
+- [x] T009 [US1] Stage all project files with `git add -A`
+- [x] T010 [US1] Create initial commit with message: `chore: initialize TheAgenticCoder repository`
+- [x] T011 [US1] Verify: `git log --oneline` shows exactly one commit (SC-001); `git branch` shows only `main` (SC-003); `git submodule status` shows hugo-clarity at valid commit (SC-004)
 
 **Checkpoint**: Fresh git repository with clean history, single initial commit, hugo-clarity submodule registered. Ready for GitHub remote configuration.
 
@@ -68,8 +68,8 @@ relevant files.
 
 ### Implementation for User Story 2
 
-- [ ] T012 [US2] Create GitHub repository and push: `gh repo create tonykay/TheAgenticCoder --public --source=. --remote=origin --push`
-- [ ] T013 [US2] Verify: `git remote -v` shows origin as `git@github.com:tonykay/TheAgenticCoder.git` (SC-002); confirm push succeeded (SC-007)
+- [x] T012 [US2] Create GitHub repository and push: `gh repo create tonykay/TheAgenticCoder --public --source=. --remote=origin --push`
+- [x] T013 [US2] Verify: `git remote -v` shows origin as `git@github.com:tonykay/TheAgenticCoder.git` (SC-002); confirm push succeeded (SC-007)
 
 **Checkpoint**: Repository live on GitHub at `github.com/tonykay/TheAgenticCoder` with clean initial commit.
 
@@ -79,9 +79,9 @@ relevant files.
 
 **Purpose**: Run full verification suite from quickstart.md to confirm all success criteria pass.
 
-- [ ] T014 Verify Hugo build succeeds: `hugo --gc --minify` completes without errors (SC-005)
-- [ ] T015 Verify file integrity: confirm config files, content directory, themes directory, `.specify/`, `.claude/`, and `.github/workflows/` all present (SC-006)
-- [ ] T016 Run complete quickstart verification checklist from `specs/004-repo-git-reinit/quickstart.md`
+- [x] T014 Verify Hugo build succeeds: `hugo --gc --minify` completes without errors (SC-005)
+- [x] T015 Verify file integrity: confirm config files, content directory, themes directory, `.specify/`, `.claude/`, and `.github/workflows/` all present (SC-006)
+- [x] T016 Run complete quickstart verification checklist from `specs/004-repo-git-reinit/quickstart.md`
 
 ---
 

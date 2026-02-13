@@ -1,17 +1,16 @@
-title                 = "Spec Coding"
+title                 = "TheAgenticCoder"
 languageCode          = "en-us"
 theme                 = ["github.com/chipzoller/hugo-clarity"]
 googleAnalytics       = "" # Enable Google Analytics by entering your tracking id
 
 [services]
   [services.disqus]
-    shortname = "www-speccoding-com"
+    shortname = "" # TODO: configure Disqus for theagenticcoder.com
 
 [params]
   [params.author]
-    name = "Spec Coding"
-    bio = "Bio All things Spec Coding, Spec Driven Development, Vibers welcome!"
-#Automation with Ansible. About 2/3rds of my time is automating production cloud deployments and developing both code and training content. I also deliver Automation training globally to both Red Hat and Partner Consultants and Architects on cloud infrastructure using Ansible and on OpenShift/Kubernetes."
+    name = "TheAgenticCoder"
+    bio = "Your hub for vibe coding, spec-driven development, and agentic AI coding — news, how-tos, tools, and resources."
     # avatar = "images/avatar.png"
 
 [taxonomies]
@@ -30,8 +29,8 @@ pagerSize = 10  # Use the same number you had for paginate
 allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^npx$', '^postcss$', '^tailwindcss$', '^asciidoctor$']
 
 [Params]
-  subtitle            = "Tony Kay's Blog on AI Engineering, HybridCloud and Container Automation" # Subtitle of your site
-  description         = "All things Spec Coding, Spec Driven Development, Vibers welcome!" # Description of your site
+  subtitle            = "Vibe Coding, Spec Coding, and Agentic AI Development" # Subtitle of your site
+  description         = "Your hub for vibe coding, spec-driven development, and agentic AI coding — news, how-tos, tools, videos, and resources." # Description of your site
   opengraph           = true
   twitter_cards       = false
   readmore            = false # Show "Read more" button in list if true

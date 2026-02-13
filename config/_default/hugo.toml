@@ -1,12 +1,12 @@
 # set `baseurl` to your root domain
 # if you set it to "/" share icons won't work properly on production
-baseurl = "https://www.specoding.com/"  # Include trailing slash
+baseurl = "https://theagenticcoder.com/"  # Include trailing slash
 # title = "Clarity"  # Edit directly from config/_default/languages.toml # alternatively, uncomment this and remove `title` entry from the aforemention file.
-copyright = "Copyright © 2025, Tony Kay and the Hugo Authors; all rights reserved."
+copyright = "Copyright © 2025-2026, Tony Kay and the Hugo Authors; all rights reserved."
 # canonifyurls = true
 
 theme = "hugo-clarity"
-disqusShortname = "www-speccoding-com"
+# disqusShortname = "" # TODO: configure Disqus for theagenticcoder.com
 
 DefaultContentLanguage = "en"
 # [languages]

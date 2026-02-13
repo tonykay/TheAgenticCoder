@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Hugo-based static website focused on Spec Coding, Spec Driven Development, and Agentic AI Software Development Tools. The site is published to GitHub Pages and uses the hugo-clarity theme.
+This is a Hugo-based static website for TheAgenticCoder — a community hub for vibe coding, spec-driven development, and agentic AI coding. The site provides news, how-tos, videos (YouTube-hosted), tools, and curated resources. Published to GitHub Pages using the hugo-clarity theme.
 
 **Site URLs:**
-- Production: https://specoding.com/
-- Alternate: https://www.specoding.com
+- Production: https://theagenticcoder.com/
+- GitHub: https://github.com/tonykay/TheAgenticCoder
 
 **Author:** Tony Kay (@cloud_assembler on X)
 
@@ -35,7 +35,7 @@ hugo
 hugo --gc --minify
 
 # Build for specific baseURL
-hugo --baseURL "https://specoding.com/"
+hugo --baseURL "https://theagenticcoder.com/"
 ```
 
 ### Content Management
@@ -56,7 +56,7 @@ The site uses Hugo's modular configuration approach with split config files in `
 - **hugo.toml**: Base Hugo settings, theme selection, taxonomies, outputs
 - **config.toml**: Site metadata, baseURL, security settings, cache configuration
 - **params.toml**: Theme-specific parameters (hugo-clarity settings), analytics, author info
-- **languages.toml**: Language configuration (currently English only, title: "AI Assembler")
+- **languages.toml**: Language configuration (currently English only)
 - **menus/menu.en.toml**: Navigation menu definitions
 
 **Important Configuration Notes:**
@@ -73,7 +73,7 @@ The site uses the hugo-clarity theme (https://github.com/chipzoller/hugo-clarity
 - **Search**: Enabled with JSON output format
 - **Code Display**: Max 7 lines with line numbers enabled, scrollable/expandable
 - **Main Sections**: Posts located in `content/post/`
-- **Logo**: `images/spec-coding-logo.png`
+- **Logo**: `images/spec-coding-logo.png` (TODO: replace with TheAgenticCoder logo)
 - **Fallback OG Image**: `images/thumbnail.png`
 
 ### Directory Structure
@@ -81,16 +81,16 @@ The site uses the hugo-clarity theme (https://github.com/chipzoller/hugo-clarity
 ```
 .
 ├── archetypes/          # Content templates for hugo new command
-├── assets/              # Source files processed by Hugo Pipes (currently empty)
+├── assets/              # Source files processed by Hugo Pipes
 ├── config/_default/     # Modular configuration files
-├── content/             # Site content (posts, pages) - currently minimal
+├── content/             # Site content (posts, pages)
 │   └── images/          # Content images
 ├── data/                # Data files for site generation
 ├── i18n/                # Internationalization files
-├── layouts/             # Custom layout overrides (currently empty, using theme defaults)
-├── public/              # Generated site output (git-tracked for GitHub Pages)
-├── resources/           # Cached processed resources
+├── layouts/             # Custom layout overrides
+├── resources/           # Cached processed resources (gitignored)
 ├── static/              # Static files copied as-is to output
+├── specs/               # Feature specifications (spec-kit)
 └── themes/hugo-clarity/ # Theme git submodule
 ```
 
@@ -98,36 +98,27 @@ The site uses the hugo-clarity theme (https://github.com/chipzoller/hugo-clarity
 
 - **Posts**: Located in `content/post/` directory
 - **Taxonomies**: Categories, tags, series, and authors
-- **Page Bundles**: Content can be organized as leaf bundles with co-located assets
+- **Page Bundles**: Content organized as leaf bundles with co-located assets
 - **Drafts**: Marked with `draft = true` in front matter
 
-### Comments System
+### Menu Structure
 
-**Commento Integration**:
-- Comment system enabled via `config/_default/params.toml` (`commento.enabled = true`)
-- Public Commento CDN: `https://cdn.commento.io`
-- Custom styling: `static/css/commento-custom.css` (matches hugo-clarity theme)
-- Template override: `layouts/partials/comments.html`
-- Features:
-  - Multiple authentication methods: anonymous, email, social login (Google/Twitter/GitHub)
-  - Post-moderation (comments appear immediately)
-  - Threaded replies supported
-  - Page-specific comment threads via `.RelPermalink`
-  - Dark mode support matching site theme
-- Custom CSS disables Commento's default font (uses Metropolis from theme)
+The site navigation is organized as a community hub:
+
+- **Home** - Landing page
+- **News** - Ecosystem updates and developments
+- **How-Tos** - Step-by-step tutorials and guides
+- **Videos** - YouTube-hosted video content with blog companions
+- **Tools** - Coding tools and platforms
+- **Resources** - Curated external links and learning materials
 
 ### Deployment
 
 **GitHub Actions Workflow** (`.github/workflows/hugo.yaml`):
 - Triggers on push to `main` branch or manual workflow dispatch
-- Environment versions:
-  - Hugo: 0.151.0 (extended)
-  - Dart Sass: 1.93.2
-  - Go: 1.25.1
-  - Node.js: 22.18.0
-- Build process: Checkout with submodules → Install dependencies → Build with `--gc --minify` → Deploy to GitHub Pages
+- Build process: Checkout with submodules -> Install dependencies -> Build with `--gc --minify` -> Deploy to GitHub Pages
+- The `public/` directory is gitignored; GitHub Actions builds it during deployment
 - Uses Hugo cache for faster builds
-- Deploys `./public` directory to GitHub Pages
 
 ### Spec-Kit Integration
 
@@ -168,17 +159,22 @@ When creating new posts:
 2. Include these front matter fields: `title`, `date`, `draft`, `tags`, `categories`
 3. Set `draft = false` when ready to publish
 4. Consider using page bundles for posts with multiple images or assets
+5. Video posts must include text summary, key timestamps, and tags
+6. External resource links must include editorial description
 
 ## Local Development Notes
 
-- Local Hugo version: v0.151.0+extended+withdeploy (darwin/arm64, installed via brew)
-- The `./public` directory is tracked in git for GitHub Pages deployment
+- The `./public` directory is gitignored; GitHub Actions builds it during deployment
 - Always test builds locally with `hugo --gc --minify` before pushing
 - Check that submodules are initialized: `git submodule update --init --recursive`
 
 ## Active Technologies
-- Bash (git 2.x, gh CLI 2.x) + git, gh (GitHub CLI), hugo (v0.151.0+extended) (004-repo-git-reinit)
-- N/A (filesystem operations only) (004-repo-git-reinit)
+- Hugo (v0.155.3+extended), hugo-clarity theme, GitHub Pages, GitHub Actions
 
-## Recent Changes
-- 004-repo-git-reinit: Added Bash (git 2.x, gh CLI 2.x) + git, gh (GitHub CLI), hugo (v0.151.0+extended)
+## TODOs
+
+- Replace logo (`images/spec-coding-logo.png`) with TheAgenticCoder branding
+- Replace sidebar image (`images/sidebar-slash-spec.png`)
+- Configure Disqus shortname for theagenticcoder.com
+- Confirm YouTube channel URL in social links
+- Clean up old blog posts from `content/post/` (inherited from Spec Coding)
