@@ -1,0 +1,20 @@
+/* Target the image inside author_header to match text height */
+.author_header img {
+    height: 2.5em !important; /* Match h2 text height - adjusts with font size */
+    max-width: 150px !important; /* Prevent overflow into text */
+    width: auto !important;
+    min-width: auto !important;
+    vertical-align: middle;
+    object-fit: contain; /* Maintain aspect ratio */
+    display: block !important;
+    margin-bottom: 0 !important; /* No spacing - matches other elements */
+    margin-left: 0 !important; /* Ensure left alignment */
+}
+
+/* Adjust the layout to stack image above text */
+.author_header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important; /* Left align */
+    text-align: left !important;
+}

@@ -1,0 +1,82 @@
+title                 = "Spec Coding"
+languageCode          = "en-us"
+theme                 = ["github.com/chipzoller/hugo-clarity"]
+googleAnalytics       = "" # Enable Google Analytics by entering your tracking id
+
+[services]
+  [services.disqus]
+    shortname = "www-speccoding-com"
+
+[params]
+  [params.author]
+    name = "Spec Coding"
+    bio = "Bio All things Spec Coding, Spec Driven Development, Vibers welcome!"
+#Automation with Ansible. About 2/3rds of my time is automating production cloud deployments and developing both code and training content. I also deliver Automation training globally to both Red Hat and Partner Consultants and Architects on cloud infrastructure using Ansible and on OpenShift/Kubernetes."
+    # avatar = "images/avatar.png"
+
+[taxonomies]
+  author = "authors"
+
+# Set the cache directory for images, Step 2 from here https://gohugo.io/host-and-deploy/host-on-github-pages/
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+
+[pagination]
+pagerSize = 10  # Use the same number you had for paginate
+
+[security.exec]
+allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^npx$', '^postcss$', '^tailwindcss$', '^asciidoctor$']
+
+[Params]
+  subtitle            = "Tony Kay's Blog on AI Engineering, HybridCloud and Container Automation" # Subtitle of your site
+  description         = "All things Spec Coding, Spec Driven Development, Vibers welcome!" # Description of your site
+  opengraph           = true
+  twitter_cards       = false
+  readmore            = false # Show "Read more" button in list if true
+  homeLayout          = "content + sidebar" # Configure home page layout
+  listLayout          = "content + sidebar" # Configure layout for list pages
+  singleLayout        = "content + sidebar" # Configure layout for single pages
+  authorbox           = true
+  post_navigation     = true
+  postSections        = ["post"]
+  #disablePathToLower  = true
+  ##preserveTaxonomyNames = true
+  # syntaxHighlighter = "highlight.js" 
+  #pygmentsStyle      = "paraiso-dark"
+  #[[params.customJS]]
+#      src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"
+#      integrity = "sha256-tvm0lHsuUZcOfj/0C9xJTU4OQx5KpUgxUcAXLX5kvwA="
+#      crossorigin = "anonymous"
+#      async = true
+#      defer = true
+
+#[Params.sidebar]
+#  home = "right" # Configure layout for home page
+#  list = "left"  # Configure layout for list pages
+#  single = false # Configure layout for single pages
+#  # Enable widgets in given order
+#  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets]
+  search              = true # Enable "Search" widget
+  recent_articles     = true # Enable "Recent arcticles" widget
+  #categories          = true # Enable "Categories" widget
+  tags                = true # Enable "Tags" widget
+  tags_counter        = true # Enable counter for each tag in "Tags" widget (disabled by default)
+  social              = true
+    github = "tonykay"
+
+#[Params.widgets.social]
+#  # Enable parts of social widget
+#  github = "tonykay"
+#  facebook = "username"
+#  twitter = "username"
+#  instagram = "username"
+#  linkedin = "username"
+#  telegram = "username"
+#  gitlab = "username"
+#  bitbucket = "username"
+#  email = "example@example.com"
+#  google_plus = "profileid"

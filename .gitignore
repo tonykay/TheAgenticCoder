@@ -1,0 +1,8 @@
+/resources/_gen/
+/public/
+hugo.darwin
+.DS_Store
+node_modules/
+.hugo_build.lock
+.vscode/
+.playwright-mcp/

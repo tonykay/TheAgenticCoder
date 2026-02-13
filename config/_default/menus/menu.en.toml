@@ -1,0 +1,142 @@
+# See example at https://github.com/chipzoller/hugo-clarity/blob/master/exampleSite/config/_default/menus/menu.en.toml
+# Created bt Tony Kay 2025-10-11
+
+[[main]]
+  name = "Home"
+  url = "/"
+  weight = -112
+
+
+[[main]]
+  name = "News"
+  url = "/categories/news/"
+  weight = -110
+
+
+[[main]]
+  name = "Spec Platforms"
+  # identifier = "Spec Tools"
+  url = "/categories/spec-coding/"
+  weight = -109
+# [[main]]
+#   parent = "Spec Tools"
+#   name = "All"
+#   url = "/categories/spec-coding/"
+#   weight = 5
+# [[main]]
+#   parent = "Spec Tools"
+#   name = "Frameworkless"
+#   url = "/categories/frameworkless/"
+#   weight = 10
+# [[main]]
+#   parent = "Spec Tools"
+#   name = "spec-kit"
+#   url = "/categories/spec-kit/"
+#   weight = 20
+# [[main]]
+#   parent = "Spec Tools"
+#   name = "Kiro"
+#   url = "/categories/kiro/"
+# [[main]]
+#   parent = "Spec Tools"
+#   name = "openspec"
+#   url = "spec-code-tools/openspec/"
+
+[[main]]
+  name = "Agentic Coding Tools"
+  identifier = "Agentic Coding Tools"
+  url = "/categories/agentic-coding-tools/"
+  weight = -106
+
+[[main]]
+  name = "MCP"
+  identifier = "Mode Central Protocol"
+  url = "/categories/mcp/"
+  weight = -104
+
+# [[main]]
+#   name = "Claude Code"
+#   identifier = "Claude Code"
+#   url = "/categories/claude-code/"
+#   weight = -102
+
+[[main]]
+  name = "Resources"
+  url = "/categories/resources/"
+  weight = -100
+
+# [[main]]
+#   name = "About"
+#   url = "/categories/about/"
+#   weight = -98
+
+# [[main]]
+#   name = "Archives"
+#   url = "post/rich-content/"
+#   weight = -109
+
+# Submenus are done this way: parent -> identifier
+# [[main]]
+#   name = "Links"
+#   identifier = "Links"
+#   weight = -108
+# [[main]]
+#   parent = "Links"
+#   name = "LinkedIn"
+#   url = "https://www.linkedin.com/"
+# [[main]]
+#   parent = "Links"
+#   name = "Twitter"
+#   url = "https://twitter.com/"
+
+# [[main]]
+#   name = "About"
+#   url = "about/"
+#   weight = -107
+
+# social menu links
+
+[[social]]
+  name = "github"
+  type = "social"
+  weight = 1
+  url = "https://github.com/tonykay"
+[[social]]
+  name = "twitter"
+  weight = 2
+  url = "https://twitter.com/cloud_assembler"
+[[social]]
+  name = "linkedin"
+  weight = 3
+  url = "https://www.linkedin.com/in/tonykay"
+[[social]]
+  name = "youtube"
+  weight = 4
+  url = "https://www.linkedin.com/in/tonykay"
+[[social]]
+  name = "rss"
+  weight = 4
+  url = "index.xml"
+
+
+# [[social]]
+#   name = "discord"
+#   url = "discord://-/users/userid"
+# #https://discord.gg/tok8888"
+#   weight = 4
+
+# other supported social links
+# name = "youtube"
+# url = "https://www.youtube.com/#"
+# name = "facebook"
+# url = "https://facebook.com/#"
+# name = "instagram"
+# url = "https://instagram.com/#"
+# name = "stackoverflow"
+# url = "https://stackoverflow.com/#"
+# name = "gitlab"
+# url = "https://gitlab.com/#"
+# name = "discord"
+# url = "https://discord.gg/#"
+# name = "bluesky"
+# url = "https://bsky.app/profile/#"

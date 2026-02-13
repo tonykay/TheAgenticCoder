@@ -1,0 +1,12 @@
+// Custom mobile menu fix
+// Ensure mobile nav is properly hidden by default on mobile devices
+@media screen and (max-width: 768px)
+  .nav_body
+    // Force the menu to be hidden off-screen initially
+    transform: translateX(-100vw) !important
+    // Ensure it's positioned correctly
+    position: fixed !important
+
+  // Only show when jsopen class is applied to body/html
+  .jsopen .nav_body
+    transform: translateX(0) !important
